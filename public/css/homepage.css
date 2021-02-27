@@ -1,4 +1,14 @@
-body {
+html, body, .page {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
+  -webkit-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
+  -moz-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
+  -o-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);  
+  color: #fff;
+  overflow: hidden; 
   font-family: 'Roboto', sans-serif!important
 }
 
@@ -30,13 +40,16 @@ button:focus {
 .weight{
   font-weight: 900!important;
 }
+
 #sidebar{
   height: 100%;
-  width: 15%;
+  width: 10%;
+  margin: auto;
   background-color: #ffe5b9;
   float: left;
   font-size: 2vw;
   position: fixed;
+  z-index: 1;
 }
 
 button span {
@@ -85,9 +98,7 @@ a:focus{
 }
 
 
-#contents #about{
-  left: 200%
-}
+
 
 /* HOME */
 .homeMenu{
@@ -109,7 +120,6 @@ a:focus{
   height: 100%;
   position: absolute;
   margin: auto;
-  background-color: #ffe5b9;
 }
 .home .text {
   margin-top: 23vw;
@@ -123,12 +133,6 @@ a:focus{
   font-size: 1vw;
 }
 
-
-
-
-
-
-
 /* ABOUT */
 .aboutMenu{
   position: relative;
@@ -137,6 +141,10 @@ a:focus{
 
 }
 
+#about{
+  left: 200%;
+  background-color: blue;
+}
 /* PROJECTS */
 .projectsMenu{
   position: relative;
@@ -167,4 +175,46 @@ a:focus{
   position: relative;
   text-align: center;
   top: 26vw
+}
+
+
+
+
+
+.page {
+  position: absolute;
+}
+
+#homepage{
+  left: 0
+}
+#aboutpage, #projectspage, #projectspage, #experiencepage, #contactpage{
+  left: 200%;
+  z-index: 2;
+}
+
+
+#homepage { background: #ffe5b9; }
+#aboutpage { background: #eff8ff; }
+#projectspage { background: #dddddd; }
+#experiencepage { background: #c9cbff; }
+#contactpage { background: #a6a9b6; }
+
+
+#about:target #aboutpage,
+#projects:target #projectspage,
+#experience:target #experiencepage,
+#contact:target #contactpage {
+  transform: translateX(-190%);
+  -webkit-transform: translateX(-190%);
+  -moz-transform: translateX(-190%);
+  -o-transform: translateX(-190%);
+  transition-delay: .4s !important;
+}
+
+#about:target #homepage, 
+#projects:target #homepage,
+#experience:target #homepage,
+#contact:target #homepage{
+  background: black;
 }
