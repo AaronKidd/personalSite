@@ -36,6 +36,7 @@ button:focus {
   background-color: #ffe5b9;
   float: left;
   font-size: 2vw;
+  position: fixed;
 }
 
 button span {
@@ -83,6 +84,11 @@ a:focus{
   font-size: 0.1vw!important;
 }
 
+
+#contents #about{
+  left: 200%
+}
+
 /* HOME */
 .homeMenu{
   position: relative;
@@ -91,6 +97,7 @@ a:focus{
 }
 
 #contents{
+  left:15%;
   position: relative;
   height: 100%;
   width: 85%;
@@ -128,10 +135,6 @@ a:focus{
   text-align: center;
   top: 20vw
 
-}
-
-#about{
-  
 }
 
 /* PROJECTS */
