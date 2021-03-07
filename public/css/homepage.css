@@ -1,4 +1,4 @@
-html, body, .page {
+html, body {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -11,7 +11,23 @@ html, body, .page {
   overflow: hidden; 
   font-family: 'Roboto', sans-serif!important
 }
-
+.page {
+  width: 90%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
+  -webkit-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
+  -moz-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
+  -o-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);  
+  color: #fff;
+  overflow: hidden; 
+  font-family: 'Roboto', sans-serif!important;
+}
+.homepage {
+  width: 100% !important;
+ 
+}
 button {
   outline:none;
   background: transparent;
@@ -29,11 +45,13 @@ button:hover {
 }
 
 button:active {
+  
   outline: none!important;
   border: none!important;
 }
 
 button:focus {
+
   outline:none!important;
   outline: 0!important;
 }
@@ -45,7 +63,7 @@ button:focus {
   height: 100%;
   width: 10%;
   margin: auto;
-  background-color: #ffe5b9;
+  background-color: #f5f5f5;
   float: left;
   font-size: 2vw;
   position: fixed;
@@ -73,11 +91,19 @@ button:hover span{
   cursor:pointer;
 }
 
+button:active span{
+  padding: 0.2vw 0 0 0;
+  margin: auto;
+  max-width: 10rem;
+  cursor:pointer;
+}
+
 button:focus span{
   padding: 0.2vw 0 0 0;
   margin: auto;
   max-width: 10rem;
   cursor:pointer;
+  
 }
 
 a:focus{
@@ -89,9 +115,6 @@ a:focus{
 
 
 
-.homebtn:focus span{
-  background-color: red;
-}
 
 #logos .span{
   font-size: 0.1vw!important;
@@ -104,7 +127,7 @@ a:focus{
 .homeMenu{
   position: relative;
   text-align: center;
-  top: 18vw
+  top: 18vw;
 }
 
 #contents{
@@ -116,14 +139,16 @@ a:focus{
 }
 
 #contents .home{
-  width: 100%;
+width: 100%;
   height: 100%;
   position: absolute;
   margin: auto;
+
 }
 .home .text {
   margin-top: 23vw;
-  margin-left: 10vw;
+  margin-left: 15vw;
+  color: black;
 }
 
 .home h1 {
@@ -143,7 +168,6 @@ a:focus{
 
 #about{
   left: 200%;
-  background-color: blue;
 }
 /* PROJECTS */
 .projectsMenu{
@@ -153,10 +177,42 @@ a:focus{
 
 }
 
-#project{
-  
+.cardimage {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
 }
 
+.card:hover .cardimage {
+  opacity: 0.3;
+}
+.cardicons{
+  font-size: 4vw;
+  text-align: center;
+
+}
+.cardimg{
+  color: black;
+}
+.card:hover .middle {
+  opacity: 1;
+}
+
+
+
+.cardtext{
+  color:black;
+  width: 100%
+}
 
 /* EXPERIENCE */
 .experienceMenu{
@@ -166,9 +222,6 @@ a:focus{
 
 }
 
-#experience{
-  
-}
 
 /* CONTACTS */
 .contactMenu{
@@ -177,44 +230,81 @@ a:focus{
   top: 26vw
 }
 
-
-
-
-
 .page {
   position: absolute;
 }
 
-#homepage{
-  left: 0
+
+#contactpage .text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -7vw;
+  margin-left: -12vw;
+  font-size: 7vw;
 }
+
+.text a {
+  color: white;
+}
+
+.zoom {
+  transition: transform .2s;
+}
+
+/* .zoom:hover {
+  transform: scale(1.3);
+} */
+
+.linkedin .zoom:hover {
+  transform: scale(1.3);
+  color: #2867B2;
+}
+
+.github .zoom:hover {
+  color: coral;
+  transform: scale(1.3);
+}
+.email .zoom:hover {
+  transform: scale(1.3);
+  color: #34A853
+}
+
+.eye .zoom:hover{
+  transform: scale(1.3);
+  color:#4285F4
+}
+
+
 #aboutpage, #projectspage, #projectspage, #experiencepage, #contactpage{
   left: 200%;
   z-index: 2;
 }
 
 
-#homepage { background: #ffe5b9; }
-#aboutpage { background: #eff8ff; }
-#projectspage { background: #dddddd; }
-#experiencepage { background: #c9cbff; }
-#contactpage { background: #a6a9b6; }
+#homepage { background: #f5f5f5; }
+#aboutpage { background: #0E1111; }
+#projectspage { background: #0E1111; }
+#experiencepage { background: #0E1111; }
+#contactpage { background: #0E1111; }
 
 
 #about:target #aboutpage,
 #projects:target #projectspage,
 #experience:target #experiencepage,
 #contact:target #contactpage {
-  transform: translateX(-190%);
-  -webkit-transform: translateX(-190%);
-  -moz-transform: translateX(-190%);
-  -o-transform: translateX(-190%);
+  transform: translateX(-211%);
+  -webkit-transform: translateX(-211%);
+  -moz-transform: translateX(-211%);
+  -o-transform: translateX(-211%);
   transition-delay: .4s !important;
 }
 
-#about:target #homepage, 
-#projects:target #homepage,
-#experience:target #homepage,
-#contact:target #homepage{
-  background: black;
+#about:target #homepage  .text, 
+#projects:target #homepage  .text,
+#experience:target #homepage  .text,
+#contact:target #homepage .text{
+  transition-duration: 500ms;
+  color: transparent;
+   text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
