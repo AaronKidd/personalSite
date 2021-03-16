@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "homepage": "public/js/homepage.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "aos": "^3.0.0-beta.6",
     "body-parser": "^1.19.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",

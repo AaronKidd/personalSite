@@ -2,7 +2,7 @@ const express = require("express")
 const app = express();
 const bodyParser = require("body-parser")
 port = 3000
-const homepage = require("./public/js/homepage");
+const homepage = require("./public/js/homepage.js");
 
 app.use(express.static("public"));
 
