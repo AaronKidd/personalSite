@@ -898,12 +898,12 @@
   }
 
 
-  .linkedin:active {
+  .linkedin:active  .linkedin:hover {
     transform: scale(1.1);
     color: #2867B2;
   }
 
-  .github:active {
+  .github:active  .github:hover {
     color: coral;
     transform: scale(1.1);
   }
@@ -912,7 +912,7 @@
     text-decoration: none;
   }
 
-  .email:active {
+  .email:active  .email:hover {
     transform: scale(1.1);
     color: #34A853
   }
