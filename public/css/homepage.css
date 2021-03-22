@@ -39,6 +39,9 @@
     overflow: hidden;
     font-family: 'Roboto', sans-serif !important
   }
+  .mobileViewModal{
+    display: none;
+  }
 
   .page {
     width: 90%;
@@ -556,6 +559,7 @@
     overflow: hidden;
     font-family: 'Roboto', sans-serif !important;
   }
+ 
 
   .homepage {
     width: 100% !important;
@@ -584,12 +588,6 @@
     border: none !important;
   }
 
-  button:focus {
-
-    outline: none !important;
-    outline: 0 !important;
-  }
-
   .weight {
     font-weight: 900 !important;
   }
@@ -603,6 +601,25 @@
   .navbar-toggler{
     margin-left:80vw
   }
+
+  .navbar{
+    background-color: white;
+  }
+
+  .nav{
+    text-align: center;
+    height: 100vh;
+  }
+
+  .navbar-nav{
+    padding-top: 15vh
+  }
+
+  .nav-item{
+    font-size: 5vh;
+  }
+
+
 
 
 
@@ -624,7 +641,7 @@
 
   .home .text {
     text-align: center;
-    margin-top: 40vw;
+    margin-top: 60vw;
     color: black;
   }
 
@@ -639,27 +656,52 @@
 
   /* ABOUT */
 
-
-  #about {
-    left: 200%;
+  #aboutpage {
+    overflow: auto;
+    top:0
   }
-
   .about .text {
-    font-size: 1.5vw;
+    margin-top: 20vw;
+    font-size: 4.5vw;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    padding: 4vw;
-    margin-top: 15vw;
+    padding: 5vw;
+
   }
+
+
 
   /* PROJECTS */
-  .projectsMenu {
-    position: relative;
-    text-align: center;
-    top: 22vw
+  .modal-footer{
+    text-align: center !important;
+    font-size: 15vw;
+    margin:auto
+
   }
 
+  .modelIcon{
+    padding: 0 10vw;
+
+  }
+
+  .projects .text{
+    margin-top: 20vw
+  }
+
+  .modal{
+    color: black;
+  }
+
+  .desktopView{
+    pointer-events: none;
+    display: none;
+  }
+
+  #projectspage {
+    overflow: auto;
+    top:0
+  }
   .cardimage {
     opacity: 1;
     display: block;
@@ -676,15 +718,10 @@
     text-align: center;
   }
 
-  .card:hover .cardimage {
-    opacity: 0.3;
-    -webkit-filter: grayscale(50%) blur(3px);
-    filter: grayscale(50%) blur(3px);
-  }
-
   .cardicons {
-    font-size: 4vw;
+    font-size: 9vw;
     text-align: center;
+    Display: inline-block 
 
   }
 
@@ -692,9 +729,10 @@
     color: black;
   }
 
-  .card:hover .middle {
-    opacity: 1;
+  .modal{
+    top: 20vw;
   }
+
 
 
   .cardtext h1 {
@@ -708,43 +746,33 @@
   }
 
   /* EXPERIENCE */
-  .experienceMenu {
-    position: relative;
-    text-align: center;
-    top: 24vw
-  }
-
   #experiencepage {
     overflow: auto;
-  }
-
-  .experience .text {
-
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    margin-top: -7vw;
-    margin-left: -12vw;
-
+    top:0
   }
 
   .cardPad {
-    padding: .5vw
+    padding: 5vw
   }
 
-  .C1,
-  .C3,
-  .C5 {
-    margin-left: -25vw;
+  .card-title{
+    font-size: 5vw;
   }
 
-  .C2,
-  .C4 {
-    margin-left: 15vw;
+  #target1{
+
+    padding-top: 20vw
+
   }
+
+  .card-subtitle {
+    font-size: 3vw;
+  }
+
 
   .cardPad .card {
-    width: 60%;
+    padding: 5vw;
+    font-size: 4vw;
   }
 
   .card-text,
@@ -754,62 +782,13 @@
 
 
   .circle {
-    position: absolute;
-    border: 0.2vw solid white;
-    width: 1.5vw;
-    height: 1.5vw;
-    border-radius: 50%;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    left: 12vw;
+    display: none;
   }
 
-  .EC1 {
-    top: 10vw
-  }
-
-  .EL1 {
-    height: 25vw;
-    top: 12vw
-  }
-
-  .EC2 {
-    top: 37.5vw
-  }
-
-  .EL2 {
-    height: 25vw;
-    top: 39.5vw
-  }
-
-  .EC3 {
-    top: 65vw
-  }
-
-  .EL3 {
-    height: 25vw;
-    top: 67vw
-  }
-
-  .EC4 {
-    top: 92.5vw
-  }
-
-  .EL4 {
-    height: 25vw;
-    top: 94.5vw
-  }
-
-  .EC5 {
-    top: 120vw
-  }
-
+  
 
   .line {
-    position: absolute;
-    border-left: 0.2vw solid white;
-    width: 0vw;
-    left: 12.7vw;
+    display: none;
   }
 
   #target1 {
@@ -878,14 +857,20 @@
 
 
   /* CONTACTS */
+  #contactpage {
+    overflow: auto;
+    top:0
+  }
   .page {
     position: absolute;
+    
   }
 
 
   #contactpage .text {
     position: absolute;
-    font-size: 7vw;
+    font-size: 30vw;
+    margin-top: 30vw;
   }
 
   .text a {
@@ -896,30 +881,34 @@
     transition: transform .2s;
   }
 
+  .linkedin, .github, .email {
+    display: block;
+    margin-left: 35vw;
+  }
 
-  .linkedin .zoom:hover {
+
+  .linkedin .zoom:active {
     transform: scale(1.3);
     color: #2867B2;
   }
 
-  .github .zoom:hover {
+  .github .zoom:active {
     color: coral;
     transform: scale(1.3);
   }
 
-  .email .zoom:hover {
+  .email .zoom:active {
     transform: scale(1.3);
     color: #34A853
   }
 
-  .eye .zoom:hover {
+  .eye .zoom:active {
     transform: scale(1.3);
     color: #4285F4
   }
 
 
   #aboutpage,
-  #projectspage,
   #projectspage,
   #experiencepage,
   #contactpage {
@@ -932,10 +921,10 @@
   #projects:target #projectspage,
   #experience:target #experiencepage,
   #contact:target #contactpage {
-    transform: translateX(-211%);
-    -webkit-transform: translateX(-211%);
-    -moz-transform: translateX(-211%);
-    -o-transform: translateX(-211%);
+    transform: translateX(-200%);
+    -webkit-transform: translateX(-200%);
+    -moz-transform: translateX(-200%);
+    -o-transform: translateX(-200%);
     transition-delay: .4s !important;
   }
 
@@ -948,7 +937,4 @@
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 
-}
-
-#home, #about, #projects, #experience, #contact{
 }
