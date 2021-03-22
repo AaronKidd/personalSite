@@ -12,11 +12,15 @@
 
     <script src="https://kit.fontawesome.com/b0526dc696.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 
 </head>
 
-<body>
 
+
+<body>
     <div id="home">
         <div id="about">
             <div id="projects">
@@ -50,10 +54,29 @@
                                                 <span>Contact</span>
                                             </i></button></a>
                                 </div>
+
+
                             </div>
                         </div>
 
                         <div class="page homepage" id="homepage">
+                            <div class="mobilenav">
+                                <nav class="navbar navbar-light fixed-top">
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar1">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="navbar-collapse collapse float-right text-right pr-3" id="collapsingNavbar1">
+                                        <ul class="nav navbar-nav mr-auto ">
+                                            <li class="nav-item mr-auto ">
+                                                <a class="nav-link mr-auto " href="#">Link</a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a class="nav-link" href="#">Link</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
                             <div class="home">
                                 <div class="text">
                                     <h1>Aaron Kidd</h1>
@@ -67,7 +90,11 @@
                         <div class="page" id="aboutpage">
                             <div class="about">
                                 <div class="text">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                                    <p>Junior Software Engineer currently working at Santander UK
+
+
+
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
                                         eleifend ornare mauris, commodo efficitur magna euismod ac.
                                         Fusce blandit orci laoreet risus consectetur mollis. Aliquam
                                         eu accumsan metus. Pellentesque eu varius arcu, ut iaculis
@@ -88,20 +115,96 @@
                                     <div class="row row-cols-1 row-cols-md-3 g-4 p-3">
                                         <div class="col">
                                             <div class="card">
-                                                <img src="https://github.com/AaronKidd/images/blob/Master/placeholder-image.png?raw=true"
+
+                                                <img src="https://github.com/AaronKidd/images/blob/Master/legalThoughtsGif.gif?raw=true"
                                                     class="card-img-top cardimage" alt="...">
                                                 <div class="middle">
                                                     <div class="cardtext">
+
+                                                        <h1 style="padding-top:1vw">Clients Legal blog</h1>
+
+
+                                                        <p> My first commissioned project, user has the ability to logon
+                                                            securely (password has been hashed using passport.js) and
+                                                            post blogs. Analytics are also avaiable for the client in
+                                                            the form of google analytics. Deployed with heroku</p>
+                                                        <p>This site was built with:</p>
+                                                        <p>HTML, ejs, CSS, bootstrap, MongoDB, NodeJS, Express and
+                                                            passport.js </p>
                                                         <div class="cardicons">
-                                                            <a class="eye" href="https://github.com/AaronKidd"><i
+                                                            <a class="eye" href="http://www.legalthoughts.co.uk/"><i
                                                                     class="zoom fas fa-eye cardimg"></i></a>
-                                                            <a class="github" href="https://github.com/AaronKidd"
+                                                            <a class="github"
+                                                                href="https://github.com/AaronKidd/stellaBlog"
                                                                 target="_blank"><i
                                                                     class="zoom fab fa-github-square cardimg"></i></a>
 
                                                         </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card">
+                                                <img src="https://github.com/AaronKidd/images/blob/Master/TinDoggif.gif?raw=true"
+                                                    class="card-img-top cardimage" alt="...">
+                                                <div class="middle">
+                                                    <div class="cardtext">
+
+                                                        <h1 style="padding-top:1vw">TinDog</h1>
+                                                        <p> Created as part of a coding challenge, TinDog is a static
+                                                            webpage deploy with github pages</p>
+                                                        <p>This site was built with:</p>
+                                                        <p>HTML, CSS and bootstrap</p>
+                                                        <div class="cardicons">
+                                                            <a class="eye" href="https://aaronkidd.github.io/TinDog/"><i
+                                                                    class="zoom fas fa-eye cardimg"></i></a>
+                                                            <a class="github" href="https://github.com/AaronKidd/TinDog"
+                                                                target="_blank"><i
+                                                                    class="zoom fab fa-github-square cardimg"></i></a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="card">
+                                                <img src="https://github.com/AaronKidd/images/blob/Master/personalSiteGif.gif?raw=true"
+                                                    class="card-img-top cardimage" alt="...">
+
+                                                <div class="middle">
+                                                    <div class="cardtext">
+                                                        <h1 style="padding-top:1vw">PersonalSite V1</h1>
+                                                        <p> Created in order to showcase my beautiful work, Im not much
+                                                            of a designer so this has been inspired by many others</p>
+                                                        <p>This site was built with:</p>
+                                                        <p>HTML, CSS, node.js, express, JavaScript and bootstrap</p>
+                                                        <div class="cardicons">
+                                                            <a class="eye" href=""><i
+                                                                    class="zoom fas fa-eye cardimg"></i></a>
+                                                            <a class="github"
+                                                                href="https://github.com/AaronKidd/personalSite"
+                                                                target="_blank"><i
+                                                                    class="zoom fab fa-github-square cardimg"></i></a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
 
+                                        <!-- <div class="col">
+                                            <div class="card">
+                                                    <img src="https://github.com/AaronKidd/images/blob/Master/placeholder-image.png?raw=true"
+                                                    class="card-img-top cardimage" alt="...">
+                                                    1304x1304
+                                                <div class="middle">
+                                                    <div class="cardtext">
+                                                        <h1 style="padding-top:1vw">Title</h1>
                                                         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
                                                             eleifend ornare mauris, commodo efficitur magna euismod ac.
                                                             Fusce blandit orci laoreet risus consectetur mollis. Aliquam
@@ -112,23 +215,20 @@
                                                             consectetur. Suspendisse pretium ac magna eget blandit.
                                                             Curabitur sit amet viverra lacus. Sed urna ligula, placerat
                                                             vitae dictum sed, condimentum eget lacus.</p>
+                                                        <div class="cardicons">
+                                                            <a class="eye" href="https://github.com/AaronKidd"><i
+                                                                    class="zoom fas fa-eye cardimg"></i></a>
+                                                            <a class="github" href="https://github.com/AaronKidd"
+                                                                target="_blank"><i
+                                                                    class="zoom fab fa-github-square cardimg"></i></a>
+
+                                                        </div>
                                                     </div>
                                                 </div>
+                                            </div>
+                                        </div>
+                                       -->
 
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="card">
-                                                <img src="https://github.com/AaronKidd/images/blob/Master/placeholder-image.png?raw=true"
-                                                    class="card-img-top" alt="...">
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="card">
-                                                <img src="https://github.com/AaronKidd/images/blob/Master/placeholder-image.png?raw=true"
-                                                    class="card-img-top" alt="...">
-                                            </div>
-                                        </div>
 
                                     </div>
 
@@ -139,8 +239,7 @@
                         <div class="page" id="experiencepage">
                             <div class="experience">
                                 <div class="text">
-                      
-                                    <div class="cardPad">
+                                    <div class="cardPad" id="target1">
                                         <div class="card C1">
                                             <div class="card-body">
                                                 <h5 class="card-title">Technology Innovation - Junior front end
@@ -159,8 +258,11 @@
                                             </div>
                                         </div>
                                     </div>
-                        
-                                    <div class="cardPad">
+
+                                    <div class="circle EC1"></div>
+                                    <div class="line EL1"></div>
+
+                                    <div class="cardPad" id="target2">
                                         <div class="card C2">
                                             <div class="card-body">
                                                 <h5 class="card-title">Automated Data Intelligence Services - ADIS</h5>
@@ -185,8 +287,10 @@
                                             </div>
                                         </div>
                                     </div>
-                  
-                                    <div class="cardPad">
+                                    <div class="circle EC2"></div>
+                                    <div class="line EL2"></div>
+
+                                    <div class="cardPad" id="target3">
                                         <div class="card C3">
                                             <div class="card-body">
                                                 <h5 class="card-title">Solutions Architecture</h5>
@@ -206,8 +310,10 @@
                                             </div>
                                         </div>
                                     </div>
-                            
-                                    <div class="cardPad" >
+                                    <div class="circle EC3 "></div>
+                                    <div class="line EL3"></div>
+
+                                    <div class="cardPad" id="target4">
                                         <div class="card C4">
                                             <div class="card-body">
                                                 <h5 class="card-title">CDO Big Data</h5>
@@ -232,8 +338,10 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="circle EC4"></div>
+                                    <div class="line EL4"></div>
 
-                                    <div class="cardPad">
+                                    <div class="cardPad" id="target5">
                                         <div class="card C5">
                                             <div class="card-body">
                                                 <h5 class="card-title">IT Engagement </h5>
@@ -256,6 +364,8 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="circle EC5"></div>
+                                    <div class="line EL5"></div>
                                 </div>
                             </div>
                         </div>
@@ -278,6 +388,37 @@
         </div>
     </div>
 
+    <script>
+        let i;
+        const x = 6
+
+        for (i = 1; i < x; i++) {
+            var target = document.querySelector(`#target${i}`);
+            var targetActiveClass = 'target-is-active';
+
+            // Call this function when it enters/leaves the viewport
+            var callback = function (entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add(targetActiveClass);
+                    } else {
+                        entry.target.classList.remove(targetActiveClass);
+                    }
+                });
+            };
+            // Create our observer
+            var observer = new IntersectionObserver(callback, {
+                threshold: 0
+            });
+            observer.observe(target);
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
     <script src="/js/homepage.js" charset="utf-8"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
