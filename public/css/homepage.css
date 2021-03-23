@@ -273,7 +273,12 @@
   .experienceMenu {
     position: relative;
     text-align: center;
-    top: 24vw
+    top: 24vw;
+    font-weight: 900 !important;
+  }
+
+  .fab, .far{
+    font-weight: 900 !important;
   }
 
   #experiencepage {
